@@ -1,7 +1,6 @@
 partial alphanumeric_keys
-xkb_symbols "dvorak-iori" {
-
-    name[Group1]= "English (Dvorak-iori)";
+xkb_symbols "main" {
+    name[Group1]= "English (alvi)";
 
     key <TLDE> { [       grave,	asciitilde, dead_grave, dead_tilde	] };
 
@@ -55,4 +54,22 @@ xkb_symbols "dvorak-iori" {
     key <AB10> { [      period,	greater, dead_abovedot, periodcentered	] };
 
     key <BKSL> { [  backslash,  bar             ]       };
+};
+
+default partial alphanumeric_keys
+xkb_symbols "modifier" {
+    include "alvi(main)"
+
+    key  <ESC> {	[ Escape	]	};
+    key <NMLK> {	[ Num_Lock	]	};
+    key <BKSP> {	[ BackSpace	]	};
+    key  <TAB> {	[ Tab, ISO_Left_Tab ]	};
+    key <RTRN> {	[ space ]	};
+    key <LFSH> {	[ Return ]	};
+    key <RTSH> {	[ Shift_R	]	};
+    key <LWIN> {	[ Super_L	]	};
+    key <LALT> {	[ Alt_L		]	};
+    key <SPCE> {	[ Control_L ]	};
+    key <RALT> {	[ Alt_R		]	};
+    key <LCTL> { [ Shift_L ]	};
 };
