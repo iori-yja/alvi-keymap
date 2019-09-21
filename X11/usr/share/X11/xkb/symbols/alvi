@@ -56,8 +56,27 @@ xkb_symbols "main" {
     key <BKSL> { [  backslash,  bar             ]       };
 };
 
+partial alphanumeric_keys
+xkb_symbols "alvi-ctrl" {
+    include "alvi(main)"
+
+    key  <ESC> {	[ Escape	]	};
+    key <NMLK> {	[ Num_Lock	]	};
+    key <BKSP> {	[ BackSpace	]	};
+    key  <TAB> {	[ Tab, ISO_Left_Tab ]	};
+    key <RTRN> {	[ space ]	};
+    key <LFSH> {	[ Return ]	};
+    key <RTSH> {	[ Shift_R	]	};
+    key <LWIN> {	[ Super_L	]	};
+    key <LALT> {	[ Alt_L		]	};
+    key <SPCE> {	[ Control_L ]	};
+    key <RALT> {	[ Alt_R		]	};
+    key <CAPS> { [ Shift_L ] };
+    key <LCTL> { [ Caps_Lock ] };
+};
+
 default partial alphanumeric_keys
-xkb_symbols "modifier" {
+xkb_symbols "alvi" {
     include "alvi(main)"
 
     key  <ESC> {	[ Escape	]	};

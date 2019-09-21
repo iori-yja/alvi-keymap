@@ -9,7 +9,7 @@ This is the repository for my own keyboard mapping implemenatations.
 
 ### the center three rows
 
-`H`, `J`, `K` and `L` are not only the navigation keys in Vi or Vim, but also the keys in many website and web applications. Haven't you used keyboard shortcuts on Facebook or twitter?
+`H`, `J`, `K` and `L` are not only the navigation keys in Vi or Vim, but also the keys in many websites and web applications. Haven't you used keyboard shortcuts on Facebook or twitter?
 
 Unfortunately, those keys lose their advantages with Dvorak layout that is claimed to have many advantages on writing. Here's the mix-in layout!
 
@@ -42,7 +42,7 @@ Same reason above, Space key is the rightmost part of the home position row.
 Put the file on your X11's xkb directory. Then,
 
 ```
-% setxkbmap alvi-ctrl
+% setxkbmap alvi alvi-caps
 ```
 
 If you are using a keyboard that has a Control key next to `A` key (like Sun Type-6 keyboard or Happy Hacking Keyboard),
