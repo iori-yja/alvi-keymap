@@ -10,6 +10,6 @@ else
 	EXEC_ROOT=doas
 fi
 
-if [[ -d $(dirname ${TARGET}) ]]; then
+if [[ -d "$(dirname ${TARGET})" ]]; then
 	${EXEC_ROOT} cp ${FILE} ${TARGET}
 fi
