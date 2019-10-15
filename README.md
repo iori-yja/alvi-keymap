@@ -42,7 +42,7 @@ Same reason above, Space key is the rightmost part of the home position row.
 Put the file on your X11's xkb directory. Then,
 
 ```
-% setxkbmap alvi alvi-caps
+% setxkbmap alvi alvi-ctrl
 ```
 
 If you are using a keyboard that has a Control key next to `A` key (like Sun Type-6 keyboard or Happy Hacking Keyboard),
